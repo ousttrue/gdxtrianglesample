@@ -7,15 +7,20 @@
     <groupId>jp.ousttrue.triangle</groupId>
     <version>1.0-SNAPSHOT</version>
   </parent>
+
   <groupId>jp.ousttrue.triangle</groupId>
   <artifactId>common</artifactId>
   <version>1.0-SNAPSHOT</version>
   <name>common</name>
   <url>http://maven.apache.org</url>
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
+
   <dependencies>
+    <dependency>
+      <groupId>com.badlogic.gdx</groupId>
+      <artifactId>gdx</artifactId>
+      <version>${gdx.version}</version>
+      <scope>compile</scope>
+    </dependency>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
