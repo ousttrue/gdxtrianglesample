@@ -25,6 +25,20 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
+      <groupId>com.badlogic.gdx</groupId>
+      <artifactId>libgdx</artifactId>
+      <version>${gdx.version}</version>
+      <type>so</type>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.badlogic.gdx</groupId>
+      <artifactId>libandroidgl20</artifactId>
+      <version>${gdx.version}</version>
+      <type>so</type>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
       <groupId>com.google.android</groupId>
       <artifactId>android</artifactId>
       <version>1.5_r4</version>
