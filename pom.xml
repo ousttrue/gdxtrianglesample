@@ -14,5 +14,6 @@
   <modules>
     <module>common</module>
     <module>android</module>
+    <module>desktop</module>
   </modules>
 </project>
