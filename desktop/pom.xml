@@ -1,21 +1,33 @@
 <?xml version="1.0"?>
 <project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <artifactId>triangle</artifactId>
     <groupId>jp.ousttrue.triangle</groupId>
     <version>1.0-SNAPSHOT</version>
   </parent>
+
   <groupId>jp.ousttrue.triangle</groupId>
   <artifactId>desktop</artifactId>
   <version>1.0-SNAPSHOT</version>
   <name>desktop</name>
   <url>http://maven.apache.org</url>
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
+
   <dependencies>
+    <!-- commonの参照 -->
+    <dependency>
+      <groupId>jp.ousttrue.triangle</groupId>
+      <artifactId>common</artifactId>
+      <version>1.0-SNAPSHOT</version>
+    </dependency>
+    <!-- gdxのdesktop用ライブラリ -->
+    <dependency>
+      <groupId>com.badlogic.gdx</groupId>
+      <artifactId>gdx-backend-jogl</artifactId>
+      <version>${gdx.version}</version>
+      <scope>compile</scope>
+    </dependency>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
